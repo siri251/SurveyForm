@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>survey form</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'></link>
+        <style>
+        #main{
+            background-image:url('glenn-carstens-peters-203007-unsplash.jpg');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+        }
+        #survey-form{
+            width:40em;
+            background-color:rgba(45,45,45,0.8);
+            margin-left:auto;
+            margin-right:auto;
+            line-height:40px;
+            padding:10px;
+            border-radius:25px;
+            color:white;
+            height:25em;
+            font-size:22px;
+            font-family:cursive;
+            
+        }
+        
+        #title{
+            text-align:center;
+        }
+        #description{
+            text-align:center;
+        }
+        input{
+            height:25px;
+            border-radius:10px;
+            padding:6px;
+        }
+        #submit:hover{
+            transform:scale(1.05);
+            background-color:darkred;
+        }
+        
+
+        </style>
+    </head>
+    <body id="main">
+     <h1 id="title">Online class survey form</h1>   
+     <p id="description">help us to improve the quality</p>
+     <form id="survey-form">
+     <table>
+     <tr>
+    <td><label id="name-label">enter the name</label></td>
+     <td><input id="name" type="text" placeholder="your name" size="30" required></label><br></td>
+     </tr>
+     <tr>
+     <td><label id="email-label">enter the email</label></td>
+     <td><input type="email" id="email" placeholder="your email" size="30" required><br></td>
+     </tr>
+     <tr>
+     <td><label id="number-label">enter the roll number</label></td>
+     <td><input type="number" id="number" min=1 max=100 placeholder="roll num"><br></td>
+     </tr>
+     <tr>
+     <td><label>select your section</label></td>
+     <td><select id="dropdown" name="dropdown">
+     <option></option>
+     <option value="5">siri</option>
+     <option value="7">sai</option>
+     </select><br></td>
+     </tr>
+     <tr>
+     <td><label>gender:</label></td>
+     <td><input type="radio" name="female-male" value="female">female<br></td>
+     <td><input type="radio" name="female-male" value="male">male<br></td>
+     </tr>
+     <tr>
+     <td><label>experiece:</label></td>
+     <td><input type="checkbox" name="comofortable" value="comfortable">comfortable</td>
+     <td><input type="checkbox" name="not-comfortable" value="not-comfortable" >not comfortable<br></td>
+     </tr>
+     <tr> 
+     <td><label>have any comments?</label></td> 
+     </tr>
+     <tr>
+     <td><textarea style="border-radius:10px;" name="comments" rows="5" columns="5">enter here..</textarea><br></td>
+     </tr>
+     <tr>
+     <td><button id="submit" type="submit">SUBMIT</button></td>
+     </tr>
+     <link href='https://fonts.googleapis.com/css?family=Lobster Two' rel='stylesheet'>
+     </table>
+     </form>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
